@@ -1,16 +1,13 @@
+# Problem: Single Number
+# Approach: Linear Search - O(n²)
+# Date: 10-03-2026
+
+nums = [2,2,1]
 
 
-list2=[3, 3, 1, 1, 1, 0, 0, 0, 0]
-
-def mostNumber(nums):
-    count = {}
-    for num in nums:
-        if num in count:
-            count[num] +=1
-        else:
-            count[num] = 1
-    return max(count, key=count.get)
-
-print(mostNumber(list2))
-
-
+def singleNumber(nums):
+    for i in nums:
+        if nums.count(i) == 1:
+            print(i)
+        
+singleNumber(nums)

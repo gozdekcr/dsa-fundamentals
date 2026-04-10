@@ -1,4 +1,8 @@
-list2=[3, 3, 1, 1, 1, 0, 0, 0, 0]
+# Problem: Most Frequent Element
+# Approach: HashMap - O(n)
+# Date: 10-04-2026
+
+nums=[3, 3, 1, 1, 1, 0, 0, 0, 0]
 
 def most_frequent(nums):
     count = {}
@@ -9,4 +13,4 @@ def most_frequent(nums):
             count[num] = 1
     return max(count, key=count.get)
 
-print(most_frequent(list2))
+print(most_frequent(nums))
