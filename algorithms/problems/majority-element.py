@@ -13,3 +13,22 @@ def majorityElement(nums):
     return max(count , key=count.get)
 
 print(majorityElement(nums))
+
+# Boyer Moore
+# Space O(1) time O(n)
+# Date: 27-08-2026
+
+def boyerMoore():
+    count= 0
+    result = 0
+    
+    for num in nums:
+        if count == 0:
+            result = num
+        if num == result:
+            count +=1
+        else:
+            count -=1
+    return result
+
+print(boyerMoore())
