@@ -1,2 +1,2 @@
 # dsa-fundamentals
-Data Structures and Algorithms solutions and notes
+Data Structures and Algorithms solutions
