@@ -41,3 +41,5 @@ print(myStack.showLast())
 
 print(myStack.pop())
 print(myStack.pop())
+
+#stack'i reverse etmek istiyorsak pop ettiklerimizi ayrı bir listeye yazdırırsak olur
