@@ -14,7 +14,7 @@ class myStack:
         
     def pop(self):
         for i in range(len(self.myQueue)-1):
-            self.myQueue.append(self.myQueue.popleft)
+            self.myQueue.append(self.myQueue.popleft())
         return self.myQueue.popleft()
     
     def top(self):
